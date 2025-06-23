@@ -34,6 +34,7 @@ Sistem Informasi Purchasing lengkap yang dibangun dari nol menggunakan Laravel 1
 • Laporan Dinamis: Laporan berdasarkan periode dengan opsi Cetak Formal & Ekspor ke CSV/Excel.
 
 **✅ Kualitas Kode**
+
 • Unit & Feature Testing (PHPUnit): Tes otomatis untuk alur kerja krusial.   
 • Service Class Pattern: Memisahkan logika bisnis yang kompleks dari controller.  
 • Database Seeder: Otomatisasi pembuatan data awal (peran & pengguna).
