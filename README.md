@@ -1,40 +1,63 @@
-**Sistem Informasi E-Purchasing**
+<div align="center">
+  <!-- Ikon generik untuk E-Purchasing, Anda bisa menggantinya dengan URL logo Anda -->
+  <img src="https://raw.githubusercontent.com/user-attachments/assets/e0f54546-d443-424a-9e32-21ea3a6a1f02" alt="Logo E-Purchasing" width="120">
+  <h1><strong>E-Purchasing System</strong></h1>
+  <p>
+    Aplikasi web untuk mengelola dan melacak alur permintaan pembelian (Purchase Request & Purchase Order) secara efisien.
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/Laravel-11-FF2D20?style=for-the-badge&logo=laravel" alt="Laravel 11">
+    <img src="https://img.shields.io/badge/PHP-8.3-777BB4?style=for-the-badge&logo=php" alt="PHP 8.3">
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
+  </p>
+</div>
 
-Sistem Informasi Purchasing lengkap yang dibangun dari nol menggunakan Laravel 11. Proyek ini mencakup seluruh alur kerja pengadaan barang, mulai dari permintaan internal hingga pencatatan faktur, yang dilengkapi dengan sistem hak akses berbasis peran, notifikasi real-time, dan pelaporan dinamis. Proyek ini dibuat untuk menunjukkan pemahaman mendalam tentang pengembangan aplikasi web modern, arsitektur perangkat lunak, dan praktik terbaik dalam ekosistem Laravel.
+---
 
-**🚀 Fitur Utama & Fungsionalitas**
+## 📖 Deskripsi Proyek
 
-**🔐 Autentikasi & Hak Akses**
+**E-Purchasing System** adalah solusi berbasis web yang dirancang untuk mendigitalkan dan menyederhanakan proses pengadaan barang di dalam sebuah perusahaan. Aplikasi ini memungkinkan departemen untuk membuat Permintaan Pembelian (Purchase Request), yang kemudian akan ditinjau dan disetujui oleh manajer sebelum diubah menjadi Pesanan Pembelian (Purchase Order) kepada supplier.
 
-• Login, Registrasi, & Pengaturan Profil   
-• Sistem Peran & Izin (Spatie/laravel-permission)   
-• Menu Dinamis sesuai Hak Akses   
-• UI Manajemen Pengguna untuk Admin
+Tujuannya adalah untuk menciptakan alur kerja yang transparan, terdokumentasi, dan efisien, mengurangi penggunaan kertas dan mempercepat proses pengadaan.
 
-**🔄 Alur Kerja Purchasing**
+---
 
-• Purchase Request (PR): Pengajuan barang oleh staf.   
-• Approval System: Persetujuan/penolakan PR oleh Manajer.   
-• Purchase Order (PO): Pembuatan pesanan resmi ke supplier.   
-• Goods Receipt Note (GRN): Pencatatan penerimaan barang.   
-• Invoice Management: Pencatatan faktur dan status pembayaran.
+## ✨ Fitur Utama
 
-**📦 Manajemen Inventaris**
+Aplikasi ini memiliki alur kerja yang jelas dengan peran pengguna yang berbeda.
 
-• Stok Otomatis: Stok bertambah saat penerimaan barang (GRN).   
-• Pengeluaran Stok: Modul permintaan internal untuk mengurangi stok.   
-• Penyesuaian Stok: Fitur untuk stock opname.   
-• Kartu Stok (Ledger): Riwayat lengkap pergerakan barang (IN, OUT, ADJ).
+| Peran | Fitur yang Dapat Diakses |
+| :--- | :--- |
+| 👤 **Admin** | <ul><li>**Dashboard Utama:** Melihat ringkasan semua transaksi (PR, PO, Supplier).</li><li>**Manajemen Data Master:** CRUD penuh untuk Produk, Supplier, dan Kategori.</li><li>**Manajemen Stok:** Menyesuaikan dan melacak stok barang.</li><li>**Kontrol Pengguna:** Mengelola semua akun pengguna dan peran mereka.</li><li>**Melihat Semua Transaksi:** Memiliki akses penuh untuk melihat semua PR dan PO dari semua departemen.</li></ul> |
+| 👨‍💼 **Manajer** | <ul><li>**Persetujuan PR:** Menyetujui atau menolak Permintaan Pembelian (PR) yang diajukan oleh staf di departemennya.</li><li>**Pembuatan PO:** Mengonversi PR yang disetujui menjadi Pesanan Pembelian (PO).</li><li>**Pelacakan:** Memantau status semua PO di departemennya.</li></ul> |
+| 🧑‍💻 **Staf**| <ul><li>**Permintaan Pembelian:** Membuat Permintaan Pembelian (PR) baru untuk barang yang dibutuhkan.</li><li>**Melihat Status:** Melacak status PR yang telah diajukan (Menunggu, Disetujui, Ditolak).</li></ul> |
 
-**✨ Fitur Lanjutan & UX**
+---
 
-• Dashboard Informatif: Kartu statistik untuk ringkasan data.   
-• Notifikasi Real-time: Ikon lonceng untuk notifikasi PR, PO, & Stok Minimum.   
-• Pencarian & Filter: Fungsi pencarian di semua modul utama.   
-• Laporan Dinamis: Laporan berdasarkan periode dengan opsi Cetak Formal & Ekspor ke CSV/Excel.
+## 🖼️ Galeri Tampilan
 
-**✅ Kualitas Kode**
+Berikut adalah beberapa tampilan dari aplikasi E-Purchasing:
 
-• Unit & Feature Testing (PHPUnit): Tes otomatis untuk alur kerja krusial.   
-• Service Class Pattern: Memisahkan logika bisnis yang kompleks dari controller.  
-• Database Seeder: Otomatisasi pembuatan data awal (peran & pengguna).
+**1. Halaman Login**
+<img src="https://raw.githubusercontent.com/oxyrus69/e-purchasing-laravel/main/public/img/login.png" alt="Halaman Login" width="700">
+
+**2. Dashboard Admin**
+<img src="https://raw.githubusercontent.com/oxyrus69/e-purchasing-laravel/main/public/img/dashboard.png" alt="Dashboard Admin" width="700">
+
+**3. Halaman Purchase Order**
+<img src="https://raw.githubusercontent.com/oxyrus69/e-purchasing-laravel/main/public/img/po.png" alt="Purchase Order" width="700">
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+-   **Backend:** Laravel 11, PHP 8.3
+-   **Frontend:** Tailwind CSS, Alpine.js
+-   **Database:** MySQL
+
+---
+
+## 📄 Lisensi
+
+Proyek ini berada di bawah Lisensi MIT. Lihat file `LICENSE.md` untuk detail lebih lanjut.
